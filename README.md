@@ -5,6 +5,7 @@
 ## Структура проекта
 - `index.html` — главная страница;
 - `css/style.css` — файл стилей;
+- `js/main.js` — скрипт модального окна и формы;
 - `images/` — папка для изображений;
 - `.gitignore` — список файлов, исключённых из Git;
 - `README.md` — описание проекта.
@@ -17,7 +18,7 @@
 ФИО: Николаев Кирилл Андреевич
 Группа: ЭФБО-07-25
 ## Текущий статус
-Создана базовая структура проекта.
+Реализована главная страница: сетка карточек товаров, форма заявки, БЭМ-классы, позиционирование элементов.
 ## Ссылка на опубликованный проект
 GitHub Pages: https://wqlwr.github.io/kr1-html-css-shop/
 
@@ -45,7 +46,6 @@ GitHub Pages: https://wqlwr.github.io/kr1-html-css-shop/
 - Практическая работа 3: добавлена форма заявки, модальное окно и базовая валидация.
 - Практическая работа 4: добавлены CSS-переменные, состояния интерфейса и упорядочена структура стилей.
 
-
 ## Реализованные элементы интерфейса
 - кнопки заказа в карточках товаров;
 - модальное окно с формой заявки;
@@ -64,3 +64,22 @@ GitHub Pages: https://wqlwr.github.io/kr1-html-css-shop/
 - состояния `:hover`, `:focus-visible`, `:disabled`;
 - визуальная подсветка ошибочных полей через `aria-invalid`;
 - структурированный файл `css/style.css`.
+
+## Flexbox и CSS Grid
+- Flexbox: шапка сайта (логотип слева, меню справа), горизонтальное меню, кнопки формы.
+- CSS Grid: сетка карточек товаров `.product-list`
+  (`repeat(auto-fit, minmax(240px, 1fr))`) — число колонок подстраивается под ширину экрана.
+
+## БЭМ-именование
+Классы названы по схеме `блок__элемент`:
+- `site-header`, `site-header__inner`, `site-header__logo`;
+- `site-nav`, `site-nav__list`, `site-nav__item`, `site-nav__link`;
+- `product-card`, `product-card__title`, `product-card__text`,
+  `product-card__price`, `product-card__badge`, `product-card__button`;
+- `form-field`, `form-field__label`, `form-field__control`, `form-field__hint`;
+- `order-dialog`, `order-dialog__title`, `form-actions__button`.
+
+## Позиционирование
+- `position: relative` — карточка товара `.product-card`;
+- `position: absolute` — бейдж «Новинка» `.product-card__badge` внутри карточки;
+- `position: fixed` — кнопка «Наверх» `.to-top`, закреплённая в углу окна.
