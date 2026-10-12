@@ -20,6 +20,7 @@
     <ul class="site-nav__list">
       <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
       <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
+      <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
       <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
       <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
       <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
@@ -75,36 +76,63 @@
 
   <section class="catalog-products">
     <h2>Список товаров</h2>
-    <div class="products-grid">
-      <article class="product-card product-card--featured">
-        <h3 class="product-card__title">Товар 1</h3>
-        <p class="product-card__description">Краткое описание учебного товара.</p>
-        <p class="product-card__price">Цена: 1000 руб.</p>
-        <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
-      </article>
+  <div class="products-grid">
+    <article class="product-card product-card--featured">
+      <h3 class="product-card__title">Товар 1</h3>
+      <p class="product-card__description">Краткое описание учебного товара.</p>
+      <p class="product-card__price">Цена: 1000 руб.</p>
+      <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+    </article>
 
-      <article class="product-card">
-        <h3 class="product-card__title">Товар 2</h3>
-        <p class="product-card__description">Краткое описание учебного товара.</p>
-        <p class="product-card__price">Цена: 1500 руб.</p>
-        <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
-      </article>
+    <article class="product-card product-card--hit">
+      <span class="product-card__badge product-card__badge--hit">Хит</span>
+      <h3 class="product-card__title">Товар 2</h3>
+      <p class="product-card__description">Краткое описание учебного товара.</p>
+      <p class="product-card__price">Цена: 1500 руб.</p>
+      <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+    </article>
 
-      <article class="product-card">
-        <h3 class="product-card__title">Товар 3</h3>
-        <p class="product-card__description">Краткое описание учебного товара.</p>
-        <p class="product-card__price">Цена: 2000 руб.</p>
-        <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
-      </article>
-    </div>
+    <article class="product-card product-card--new">
+      <span class="product-card__badge">Новинка</span>
+      <h3 class="product-card__title">Товар 3</h3>
+      <p class="product-card__description">Краткое описание учебного товара.</p>
+      <p class="product-card__price">Цена: 2000 руб.</p>
+      <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+    </article>
+
+    <article class="product-card product-card--discount">
+      <span class="product-card__badge product-card__badge--discount">Скидка</span>
+      <h3 class="product-card__title">Товар 4</h3>
+      <p class="product-card__description">Краткое описание учебного товара.</p>
+      <p class="product-card__price">Цена: 1200 руб.</p>
+      <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+    </article>
+
+    <article class="product-card">
+      <h3 class="product-card__title">Товар 5</h3>
+      <p class="product-card__description">Краткое описание учебного товара.</p>
+      <p class="product-card__price">Цена: 2500 руб.</p>
+      <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+    </article>
+
+    <article class="product-card">
+      <h3 class="product-card__title">Товар 6</h3>
+      <p class="product-card__description">Краткое описание учебного товара.</p>
+      <p class="product-card__price">Цена: 3000 руб.</p>
+      <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+    </article>
+  </div>
   </section>
 </section>
 
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
-  </footer>
+    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+</footer>
+
+  <a class="to-top" href="#">Наверх</a>
+
 </body>
 </html>
